@@ -1,16 +1,146 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 a {
-  color: inherit;
   text-decoration: none;
 }
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  /* background: #efefef; */
+  font-family: 'Urbanist', sans-serif;
+  overflow-x: hidden;
+}
+
+body {
+  background: #eee;
+}
+
+
+.nav-bar nav {
+  height: 80px;
+  background: lightblue;
+  text-align: center;
+  font-size: 1.2em;
+  padding: 10px;
+  color: rgb(74, 155, 141);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+}
+
+.nav-bar nav .logo {
+  border-radius: 50%;
+}
+
+.nav-bar nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-bar nav ul li {
+  padding: 0 30px;
+  transition: text-decoration 0.3s;
+}
+
+.nav-bar nav ul li:hover {
+  text-decoration: underline;
+}
+
+.search-box .box::before {
+  display: block;
+  font-size: 3.4em;
+  font-weight: bold;
+  content: "Dream Remote Jobs A Click Away";
+  margin: 20px auto;
+  font-family: 'Open Sans', sans-serif;
+  color:rgb(7, 66, 56);
+}
+
+.search-box .box {
+  position: absolute;
+  width: 100%;
+  top: 18%;
+  transform: translateX(23%);
+  appearance: none;
+}
+
+.box input {
+  width: 50%;
+  padding: 10px;
+}
+
+.box button {
+  width: 5%;
+  padding: 10px;
+}
+
+.about h1, .about p {
+  font-size: 2.5em;
+  margin-top: 6%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.contact h1, .contact p {
+  font-size: 2.5em;
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.contact .links {
+  margin-top: 20px;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.cards {
+  margin: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  text-align: center;
+  padding: 10px;
+  background: #ddd;
+  width: 300px;
+  height: 325px;
+  margin: 20px;
+  transition: box-shadow 0.5s, transform 0.3s;
+  overflow: hidden;
+}
+
+.card h2, .card p {
+  padding: 10px;
+}
+
+.card:hover {
+  background: #fff;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+}
+
+.search {
+  position: relative;
+  left: 20%;
+  margin: 50px auto;
+}
+
+.search button {
+  background: #388cc0;
+  color: white;
 }
